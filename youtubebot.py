@@ -5,6 +5,7 @@ from discord.ext import commands
 import yt_dlp
 import urllib
 import asyncio
+import threading
 import os
 import shutil
 import sys
@@ -12,7 +13,7 @@ import subprocess as sp
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = ''
+TOKEN = 'TOKEN'
 PREFIX = '.'
 PRINT_STACK_TRACE = os.getenv('PRINT_STACK_TRACE', '1').lower() in ('true', 't', '1')
 try:
