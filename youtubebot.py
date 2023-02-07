@@ -13,7 +13,7 @@ import subprocess as sp
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = 'MTA2NTEzNzA2NjI4OTE1NjE0Ng.GLW5hM._G2AdNO__MjYggpAs8g6tyl48_dBxS-0XSNiFs'
+TOKEN = ''
 PREFIX = '.'
 PRINT_STACK_TRACE = os.getenv('PRINT_STACK_TRACE', '1').lower() in ('true', 't', '1')
 try:
