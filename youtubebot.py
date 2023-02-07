@@ -13,8 +13,8 @@ import subprocess as sp
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.getenv('BOT_TOKEN')
-PREFIX = os.getenv('BOT_PREFIX', '.')
+TOKEN = 'MTA2NTEzNzA2NjI4OTE1NjE0Ng.GLW5hM._G2AdNO__MjYggpAs8g6tyl48_dBxS-0XSNiFs'
+PREFIX = '.'
 PRINT_STACK_TRACE = os.getenv('PRINT_STACK_TRACE', '1').lower() in ('true', 't', '1')
 try:
     COLOR = int(os.getenv('BOT_COLOR', 'ff0000'), 16)
