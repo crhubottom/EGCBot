@@ -5,7 +5,6 @@ from discord.ext import commands
 import yt_dlp
 import urllib
 import asyncio
-import threading
 import os
 import shutil
 import sys
