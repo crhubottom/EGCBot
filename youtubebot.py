@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 from src import bot
 import sys
 load_dotenv()
-TOKEN = ''
+TOKEN = 'TOKEN'
 PREFIX = '.'
 PRINT_STACK_TRACE = os.getenv('PRINT_STACK_TRACE', '1').lower() in ('true', 't', '1')
 try:
