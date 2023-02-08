@@ -11,7 +11,8 @@ import shutil
 import sys
 import subprocess as sp
 from dotenv import load_dotenv
-
+from src import bot
+import sys
 load_dotenv()
 TOKEN = 'TOKENs'
 PREFIX = '.'
@@ -26,7 +27,32 @@ except ValueError:
 bot = commands.Bot(command_prefix=PREFIX, intents=discord.Intents(voice_states=True, guilds=True, guild_messages=True, message_content=True))
 queues = {} # {server_id: [(vid_file, info), ...]}
 
+def check_verion() -> None:
+    import pkg_resources
+    import src.log
 
+    # init loggger
+    logger = src.log.setup_logger(__name__)
+
+    # Read the requirements.txt file and add each line to a list
+    with open('requirements.txt') as f:
+        required = f.read().splitlines()
+
+    # For each library listed in requirements.txt, check if the corresponding version is installed
+    for package in required:
+        # Use the pkg_resources library to get information about the installed version of the library
+        package_name, package_verion = package.split('==')
+        installed = pkg_resources.get_distribution(package_name)
+        # Extract the library name and version number
+        name, version = installed.project_name, installed.version
+        # Compare the version number to see if it matches the one in requirements.txt
+        if package != f'{name}=={version}':
+            logger.error(f'{name} version {version} is installed but does not match the requirements')
+            sys.exit();
+
+if __name__ == '__youtubebot__': 
+    check_verion()
+    bot.run_discord_bot()
   
 def main():
     if TOKEN is None:
