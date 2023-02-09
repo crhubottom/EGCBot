@@ -58,7 +58,8 @@ async def NASASPACEFLIGHT(ctx: commands.Context, *args):
 @bot.command(name='tagEvan', aliases=['evan'])
 async def tagEvan(ctx: commands.Context, *args):
   await ctx.send('@Evan @Evan @Evan @Evan @Evan @Evan @Evan @Evan @Evan @Evan @Evan @Evan @Evan @Evan @Evan')
-
+  
+@bot.command(name='confuse', aliases=['media'])
 async def confuse(ctx: commands.Context, *args):
   await ctx.send('https://images-ext-2.discordapp.net/external/VIz-c6bLrSdJacM6_09rCWWpvDTOQsrt5CpSdbdVeW8/https/media.tenor.com/BAYHQ7lY7ccAAAPo/space-x-confuse-media-button.mp4')
   
