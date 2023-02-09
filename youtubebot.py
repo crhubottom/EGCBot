@@ -49,6 +49,18 @@ async def queue(ctx: commands.Context, *args):
     if not await sense_checks(ctx):
         return
 
+
+
+@bot.command(name='NASASPACEFLIGHT', aliases=['nsf'])
+async def NASASPACEFLIGHT(ctx: commands.Context, *args):
+  await ctx.send('https://www.youtube.com/watch?v=mhJRzQsLZGg')
+@bot.command(name='confusemedia', aliases=['media'])
+async def confuse(ctx: commands.Context, *args):
+  await ctx.send('https://images-ext-2.discordapp.net/external/VIz-c6bLrSdJacM6_09rCWWpvDTOQsrt5CpSdbdVeW8/https/media.tenor.com/BAYHQ7lY7ccAAAPo/space-x-confuse-media-button.mp4')
+@bot.command(name='spinprime', aliases=['sp'])
+async def spinprime(ctx: commands.Context, *args):
+  await ctx.send('https://media.discordapp.net/attachments/701153119794364537/1019767763230785577/Another_Spin_Prime-1.mp4')
+
 @bot.command(name='skip', aliases=['s'])
 async def skip(ctx: commands.Context, *args):
     try: queue_length = len(queues[ctx.guild.id])
