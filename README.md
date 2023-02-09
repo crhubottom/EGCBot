@@ -1,4 +1,4 @@
-# YoutubeBot - a self-hosted Discord bot for playing YouTube videos
+# EGCBot - a self-hosted Discord bot for playing YouTube videos and other stuff
 ## Commands
 - `.play {url or search}` - plays or queues a video, and joins VC if it's not already there.
     - alternate: `.p`
