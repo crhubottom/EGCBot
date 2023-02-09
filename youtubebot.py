@@ -53,7 +53,7 @@ async def queue(ctx: commands.Context, *args):
 
 @bot.command(name='NASASPACEFLIGHT', aliases=['nsf'])
 async def NASASPACEFLIGHT(ctx: commands.Context, *args):
-  await ctx.send('https://www.youtube.com/watch?v=mhJRzQsLZGg')
+  await message.channel.send("Message", {files: ["https://www.youtube.com/watch?v=mhJRzQsLZGg"]});
 @bot.command(name='confusemedia', aliases=['media'])
 async def confuse(ctx: commands.Context, *args):
   await ctx.send('https://images-ext-2.discordapp.net/external/VIz-c6bLrSdJacM6_09rCWWpvDTOQsrt5CpSdbdVeW8/https/media.tenor.com/BAYHQ7lY7ccAAAPo/space-x-confuse-media-button.mp4')
