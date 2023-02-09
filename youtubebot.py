@@ -53,7 +53,7 @@ async def queue(ctx: commands.Context, *args):
 
 @bot.command(name='NASASPACEFLIGHT', aliases=['nsf'])
 async def NASASPACEFLIGHT(ctx: commands.Context, *args):
-  await ctx.('https://www.youtube.com/watch?v=mhJRzQsLZGg')
+  await ctx.send('https://www.youtube.com/watch?v=mhJRzQsLZGg')
   
 @bot.command(name='tagEvan', aliases=['evan'])
 async def tagEvan(ctx: commands.Context, *args):
